@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Ray On Rails]]></title>
   <link href="http://rayonrails.github.com/atom.xml" rel="self"/>
   <link href="http://rayonrails.github.com/"/>
-  <updated>2013-01-19T10:17:23-05:00</updated>
+  <updated>2013-01-19T10:26:35-05:00</updated>
   <id>http://rayonrails.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Ray Rogers]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>

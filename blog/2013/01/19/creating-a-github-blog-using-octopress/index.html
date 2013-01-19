@@ -5,8 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Creating a Github blog Using Octopress - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Creating a Github blog Using Octopress - Ray On Rails</title>
+  <meta name="author" content="Ray Rogers">
 
   
   <meta name="description" content="Pretty easy set up! I would definitely start at Octopress. Here are couple links that I used to get me up and running. Easy to follow walk-thru &hellip;">
@@ -24,7 +24,7 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Ray On Rails" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -35,9 +35,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Ray On Rails</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>my words.</h2>
   
 </hgroup>
 
@@ -107,7 +107,7 @@
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Ray Rogers</span></span>
 
       
 
@@ -129,7 +129,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/" data-via="" data-counturl="http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/" data-via="rayonrails" data-counturl="http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/" >Tweet</a>
   
   
   
@@ -158,6 +158,51 @@
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/rayonrails">@rayonrails</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'rayonrails',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rayonrails", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rayonrails" class="twitter-follow-button" data-show-count="false">Follow @rayonrails</a>
+  
+</section>
 
 
 
@@ -170,7 +215,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Your Name -
+  Copyright &copy; 2013 - Ray Rogers -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
