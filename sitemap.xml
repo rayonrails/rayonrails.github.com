@@ -1,12 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/
+        </loc>
+        <lastmod>2013-01-19T10:13:53-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://rayonrails.github.com/blog/archives/</loc>
-        <lastmod>2013-01-19T09:39:33-05:00</lastmod>
+        <lastmod>2013-01-19T10:13:53-05:00</lastmod>
     </url>
     <url>
         <loc>http://rayonrails.github.com/</loc>
-        <lastmod>2013-01-19T09:39:33-05:00</lastmod>
+        <lastmod>2013-01-19T10:13:53-05:00</lastmod>
     </url>
     <url>
         <loc>http://rayonrails.github.com/robots.txt</loc>
