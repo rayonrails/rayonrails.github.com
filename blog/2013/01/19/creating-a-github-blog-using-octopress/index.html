@@ -129,7 +129,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/" data-via="" data-counturl="http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/" data-via="rayonrails" data-counturl="http://rayonrails.github.com/blog/2013/01/19/creating-a-github-blog-using-octopress/" >Tweet</a>
   
   
   
@@ -158,6 +158,22 @@
   </ul>
 </section>
 
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rayonrails", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rayonrails" class="twitter-follow-button" data-show-count="false">Follow @rayonrails</a>
+  
+</section>
 
 
 

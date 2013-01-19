@@ -9,8 +9,8 @@
   <meta name="author" content="Ray Rogers">
 
   
-  <meta name="description" content=" Blog Archive 2013 Creating a Github blog Using Octopress
-Jan 19 2013 Recent Posts Creating a Github blog Using Octopress ">
+  <meta name="description" content="Blog Archive 2013 Creating a Github blog Using Octopress
+Jan 19 2013 Recent Posts Creating a Github blog Using Octopress Latest Tweets Status &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -106,6 +106,22 @@ Jan 19 2013 Recent Posts Creating a Github blog Using Octopress ">
   </ul>
 </section>
 
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rayonrails", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rayonrails" class="twitter-follow-button" data-show-count="false">Follow @rayonrails</a>
+  
+</section>
 
 
 
